@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9445C103-8C1F-4F64-9CAF-638E881092F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratory_Management_System</RootNamespace>
+    <AssemblyName>Laboratory_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.32.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.32.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.3.8\lib\net462\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.3.8.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.3.8\lib\net462\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.8.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.8\lib\net462\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=9.5.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.9.5.0\lib\net462\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.IO.Pipelines, Version=5.0.0.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Pipelines.5.0.2\lib\net461\System.IO.Pipelines.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ZstdSharp, Version=0.8.6.0, Culture=neutral, PublicKeyToken=8d151af33a4ad5cf, processorArchitecture=MSIL">
+      <HintPath>..\packages\ZstdSharp.Port.0.8.6\lib\net462\ZstdSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Admin\AdminPage.xaml.cs">
+      <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EquDetails\EquDetails.xaml.cs">
+      <DependentUpon>EquDetails.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="DbConnection\DbConnection.cs" />
+    <Compile Include="DbConnection\MySqlConnection.cs" />
+    <Compile Include="UC_Payment\Payment.xaml.cs">
+      <DependentUpon>Payment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Apron.cs" />
+    <Compile Include="UserControlsSafety\Apron.xaml.cs">
+      <DependentUpon>Apron.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\CircuitBreaker\CircuitBreaker.cs" />
+    <Compile Include="UserControlsSafety\CircuitBreaker\CircuitBreaker.xaml.cs">
+      <DependentUpon>CircuitBreaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Cloves.cs" />
+    <Compile Include="UserControlsSafety\Cloves.xaml.cs">
+      <DependentUpon>Cloves.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\CutResistantGlass\Cut.cs" />
+    <Compile Include="UserControlsSafety\CutResistantGlass\Cut.xaml.cs">
+      <DependentUpon>Cut.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\EmergencyOxygenKit\EmergencyOxygenKit.cs" />
+    <Compile Include="UserControlsSafety\EmergencyOxygenKit\EmergencyOxygenKit.xaml.cs">
+      <DependentUpon>EmergencyOxygenKit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\FireBlanket\FireBlanket.cs" />
+    <Compile Include="UserControlsSafety\FireBlanket\FireBlanket.xaml.cs">
+      <DependentUpon>FireBlanket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\FireExtinguisher\FireExtinguisher.cs" />
+    <Compile Include="UserControlsSafety\FireExtinguisher\FireExtinguisher.xaml.cs">
+      <DependentUpon>FireExtinguisher.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\FirstAidKit\FirstAidKit.cs" />
+    <Compile Include="UserControlsSafety\FirstAidKit\FirstAidKit.xaml.cs">
+      <DependentUpon>FirstAidKit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Forceps\Forceps.cs" />
+    <Compile Include="UserControlsSafety\Forceps\Forceps.xaml.cs">
+      <DependentUpon>Forceps.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Goggles\Goggles.cs" />
+    <Compile Include="UserControlsSafety\Goggles\Goggles.xaml.cs">
+      <DependentUpon>Goggles.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\InsulatedTools\InsulatedTools.cs" />
+    <Compile Include="UserControlsSafety\InsulatedTools\InsulatedTools.xaml.cs">
+      <DependentUpon>InsulatedTools.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\LabCoat.cs" />
+    <Compile Include="UserControlsSafety\LabCoat.xaml.cs">
+      <DependentUpon>LabCoat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Mask\Mask.cs" />
+    <Compile Include="UserControlsSafety\Mask\Mask.xaml.cs">
+      <DependentUpon>Mask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\SafetyShield\SafetyShield.cs" />
+    <Compile Include="UserControlsSafety\SafetyShield\SafetyShield.xaml.cs">
+      <DependentUpon>SafetyShield.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\SandBucket\SandBucket.cs" />
+    <Compile Include="UserControlsSafety\SandBucket\SandBucket.xaml.cs">
+      <DependentUpon>SandBucket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\SolventWasteBottles\Solvent.cs" />
+    <Compile Include="UserControlsSafety\SolventWasteBottles\Solvent.xaml.cs">
+      <DependentUpon>Solvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\Tongs\Tongs.cs" />
+    <Compile Include="UserControlsSafety\Tongs\Tongs.xaml.cs">
+      <DependentUpon>Tongs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlsSafety\XRayPPE\XRayPPE.cs" />
+    <Compile Include="UserControlsSafety\XRayPPE\XRayPPE.xaml.cs">
+      <DependentUpon>XRayPPE.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Safety.xaml.cs">
+      <DependentUpon>Safety.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Admin\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Admin\EquDetails\EquDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Equipments.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmcreate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmreset.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="frmuser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Equipments.xaml.cs">
+      <DependentUpon>Equipments.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmcreate.xaml.cs">
+      <DependentUpon>frmcreate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmreset.xaml.cs">
+      <DependentUpon>frmreset.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="frmuser.xaml.cs">
+      <DependentUpon>frmuser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="otpuser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC_Payment\Payment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Apron.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\CircuitBreaker\CircuitBreaker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Cloves.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\CutResistantGlass\Cut.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\EmergencyOxygenKit\EmergencyOxygenKit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\FireBlanket\FireBlanket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\FireExtinguisher\FireExtinguisher.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\FirstAidKit\FirstAidKit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Forceps\Forceps.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Goggles\Goggles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\InsulatedTools\InsulatedTools.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\LabCoat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Mask\Mask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\SafetyShield\SafetyShield.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\SandBucket\SandBucket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\SolventWasteBottles\Solvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\Tongs\Tongs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControlsSafety\XRayPPE\XRayPPE.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Safety.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="otpuser.xaml.cs">
+      <DependentUpon>otpuser.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imglab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserControlsSafety\Golves.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="solo-leveling-sung-jinwoo-igris-shadow-4k-wallpaper-uhdpaper.com-176%405%40d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UserControlsSafety\Apron.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

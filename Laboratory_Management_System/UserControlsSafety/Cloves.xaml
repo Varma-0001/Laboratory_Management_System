@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="Laboratory_Management_System.UserControlsSafety.Cloves"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Laboratory_Management_System.UserControlsSafety"
+             mc:Ignorable="d" 
+             Background="AliceBlue"
+             d:DesignHeight="814.04" d:DesignWidth="448.5">
+    <Grid>
+        <Label Content="Gloves" Height="85" HorizontalAlignment="Center" FontSize="50" FontWeight="Bold" Margin="0,20,0,710"/>
+        <Image HorizontalAlignment="Right" Width="166" Margin="0,138,274,512" Source="/UserControlsSafety/Golves.png" />
+        <TextBlock x:Name="blkgloves" Text="Gloves in labs are importantly used in every experiments." FontSize="32" TextWrapping="Wrap" Margin="187,136,12,511"/>
+        <Label Content="Needed Amount" HorizontalAlignment="Left" Margin="14,467,0,0" VerticalAlignment="Top" Height="52" Width="232" FontSize="30"/>
+        <TextBox x:Name="txtamount" HorizontalAlignment="Center" Margin="0,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" Height="47" FontSize="30" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+        <Label Content="Total Amount" HorizontalAlignment="Left" Margin="18,604,0,0" VerticalAlignment="Top" Height="52" Width="232" FontSize="30"/>
+        <TextBox x:Name="txttotal" HorizontalAlignment="Center" Margin="0,658,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="423" Height="33" FontSize="20" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}" IsReadOnly="True"/>
+        <Button x:Name="btnGLFinish" Content="Finish" HorizontalAlignment="Left" Margin="269,729,0,0" VerticalAlignment="Center" VerticalContentAlignment="Center" Height="33" Width="120" FontSize="20"/>
+        <Button x:Name="btnGLTotal" Content="Total" Click="btnGLTotal_Click" HorizontalAlignment="Left" Margin="15,750,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Height="44" Width="163" FontSize="30"/>
+        <Label Content="Available Amount" HorizontalAlignment="Left" Margin="14,341,0,0" VerticalAlignment="Top" Height="52" Width="248" FontSize="30"/>
+        <TextBox x:Name="txtcount" HorizontalAlignment="Left" Margin="12,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" Height="30" FontSize="20" BorderBrush="{DynamicResource {x:Static SystemColors.HighlightBrushKey}}"/>
+    </Grid>
+</UserControl>

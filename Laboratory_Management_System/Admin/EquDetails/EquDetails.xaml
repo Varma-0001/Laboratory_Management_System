@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="Laboratory_Management_System.Admin.EquDetails.EquDetails"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Laboratory_Management_System.Admin.EquDetails"
+             mc:Ignorable="d" 
+             d:DesignHeight="897" d:DesignWidth="894.04" Background="AliceBlue">
+    <Grid Margin="10">
+        <!-- UniformGrid arranges buttons evenly -->
+        <UniformGrid Rows="3" Columns="4" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Button x:Name="BtnAddEquBeaker" Click="BtnAddEquBeaker_Click" Content="Beaker" FontSize="34" Width="200" Height="200" Margin="9,46,10,46"/>
+            <Button x:Name="BtnAddEquTube"   Click="BtnAddEquTube_Click" Content="Test Tube" FontSize="34" Width="200" Height="200" Margin="9,46,10,46"/>
+            <Button x:Name="BtnAddEquWGlass" Click="BtnAddEquWGlass_Click" Content="Watch Glass" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquGloves" Click="BtnAddEquGloves_Click" Content="Gloves" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquMScope" Click="BtnAddEquMScope_Click" Content="Microscope" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquApron"  Click="BtnAddEquApron_Click" Content="Apron" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquTongs"  Click="BtnAddEquTongs_Click" Content="Tongs" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquForceps" Click="BtnAddEquForceps_Click" Content="Forceps" FontSize="30" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquMask" Click="BtnAddEquMask_Click" Content="Mask" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquBlanket" Click="BtnAddEquBlanket_Click" Content="Fire Blanket" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAddEquCoat" Click="BtnAddEquCoat_Click" Content="Lab Coat" FontSize="34" Width="200" Height="200" Margin="5"/>
+            <Button x:Name="BtnAdd" Click="BtnAdd_Click" Content="+" FontSize="100" Width="200" Height="200" Margin="5"/>
+        </UniformGrid>
+    </Grid>
+</UserControl>

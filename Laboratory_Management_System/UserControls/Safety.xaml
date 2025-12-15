@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="Laboratory_Management_System.UserControls.Safety"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Laboratory_Management_System.UserControls"
+             mc:Ignorable="d" 
+             d:DesignHeight="814.04" d:DesignWidth="448.5" Background="AliceBlue">
+
+    <!-- Root Grid to host buttons -->
+    <Grid Background="White">
+        <!-- Define rows and columns for square layout -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <!-- Square Buttons -->
+        <Button x:Name="BtnCloves" Grid.Row="0" Grid.Column="0" Content="Cloves" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="25" Click="BtnCloves_Click"/>
+        <Button x:Name="BtnApron" Click="BtnApron_Click" Grid.Row="0" Grid.Column="1" Content="Apron" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="25"/>
+        <Button x:Name="BtnLabCoat" Click="BtnLabCoat_Click" Grid.Row="0" Grid.Column="2" Content="Lab Coat" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="25"/>
+
+        <Button x:Name="BtnMask" Click="BtnMask_Click" Grid.Row="1" Grid.Column="0" Content="Mask" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnSand" Click="BtnSand_Click" Grid.Row="1" Grid.Column="1" Content="Sand Bucket" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnFirstaid" Click="BtnFirstaid_Click" Grid.Row="1" Grid.Column="2" Content="First Aid Kit" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+
+        <Button x:Name="BtnFBlanket" Click="BtnFBlanket_Click" Grid.Row="2" Grid.Column="0" Content="Fire Blanket" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnGoggles" Click="BtnGoggles_Click" Grid.Row="2" Grid.Column="1" Content="Goggles" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnCircuit" Click="BtnCircuit_Click" Grid.Row="2" Grid.Column="2" Content="Circuit&#xD;&#xA;Breaker" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+
+        <Button x:Name="BtnFire" Click="BtnFire_Click" Grid.Row="3" Grid.Column="0" Content="Fire&#xD;&#xA;Extinguisher" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnTools" Click="BtnTools_Click" Grid.Row="3" Grid.Column="1" Content="Insulated&#xD;&#xA;Tools" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnTongs" Click="BtnTongs_Click" Grid.Row="3" Grid.Column="2" Content="Tongs" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+
+        <Button x:Name="BtnForceps" Click="BtnForceps_Click" Grid.Row="4" Grid.Column="0" Content="Forceps" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnSafetyShield" Click="BtnSafetyShield_Click" Grid.Row="4" Grid.Column="1" Content="Safety Shield" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnSolvent" Click="BtnSolvent_Click" Grid.Row="4" Grid.Column="2" Content="Solvent Waste &#xD;&#xA;Bottles" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+
+        <Button x:Name="BtnOxygen" Click="BtnOxygen_Click" Grid.Row="5" Grid.Column="0" Content="Emergency &#xD;&#xA;Oxygen &#xD;&#xA;Kit" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnXRay" Click="BtnXRay_Click" Grid.Row="5" Grid.Column="1" Content="X-Ray PPE" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+        <Button x:Name="BtnResistanceGlass" Click="BtnResistanceGlass_Click" Grid.Row="5" Grid.Column="2" Content="Cut-resistant &#xD;gloves" FontSize="14" VerticalContentAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold" Width="100" Height="100" Margin="15"/>
+
+
+    </Grid>
+</UserControl>

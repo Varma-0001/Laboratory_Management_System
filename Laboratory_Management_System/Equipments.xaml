@@ -1,0 +1,44 @@
+﻿<Window x:Class="Laboratory_Management_System.Equipments"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratory_Management_System"
+        mc:Ignorable="d"
+        Title="Equipment" Height="830" Width="1077" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180"/>
+            <!-- Left panel -->
+            <ColumnDefinition Width="*"/>
+            <!-- Middle panel -->
+            <ColumnDefinition Width="*"/>
+            <!-- Right panel -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Left panel: navigation buttons -->
+        <StackPanel Grid.Column="0" Background="#f0f0f0" VerticalAlignment="Stretch">
+            <Image  Height="110" Margin="15" Stretch="UniformToFill" Source="/solo-leveling-sung-jinwoo-igris-shadow-4k-wallpaper-uhdpaper.com-176@5@d.jpg"/>
+
+            <Button Content="Equipment" x:Name="BtnEqu" Click="BtnEqu_Click" Margin="15,10,15,8" Height="32"/>
+
+            <Button HorizontalAlignment="Right" Content="Safety" x:Name="BtnSafety" Click="BtnSafety_Click" Visibility="Collapsed" Margin="0,0,15,8" Height="32" Width="110"/>
+            <Button HorizontalAlignment="Right" Content="Acid" x:Name="BtnAcid" Click="BtnAcid_Click" Visibility="Collapsed" Margin="0,0,15,8" Height="32" Width="110"/>
+            <Button Content="Payement" x:Name="BtnPay" Click="BtnPay_Click" Margin="15,10,15,8" Height="32"/>
+        </StackPanel>
+
+        <!-- Middle panel (content host) -->
+        <ContentControl x:Name="MiddlePanel" Grid.Column="1" Background="#e8f4ff"/>
+
+        <!-- Right panel (content host) -->
+        <ContentControl x:Name="RightPanel" Grid.Column="2" Background="#fff3e0"/>
+
+        <Border x:Name="OverlayPanel"
+                Grid.Column="1"
+                Grid.ColumnSpan="2"
+                Background="#AA000000"
+                Visibility="Collapsed">
+            <ContentControl x:Name="OverlayContent"/>
+        </Border>
+    </Grid>
+</Window>

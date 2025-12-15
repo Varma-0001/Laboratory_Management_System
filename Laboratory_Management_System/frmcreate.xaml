@@ -1,0 +1,41 @@
+﻿<Window x:Class="Laboratory_Management_System.frmcreate"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratory_Management_System"
+        mc:Ignorable="d"
+        Title="frmcreate" Height="830" Width="1077" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
+    <Grid>
+        <Grid Margin="0,0,0,2" Background="{DynamicResource {x:Static SystemColors.InactiveCaptionBrushKey}}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="592*"/>
+                <ColumnDefinition Width="485*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="lblsingin" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Height="47" Width="250" FontSize="24" Content="Create your account" FontWeight="Bold" Grid.Column="1"/>
+            <Image HorizontalAlignment="Left" Width="458" Source="/imglab.jpg" Margin="0,1,0,-2"/>
+            <Label x:Name="lblfirstname" Content="First Name" HorizontalAlignment="Left" Margin="476,58,0,0" VerticalAlignment="Top" Width="108" FontSize="20"/>
+            <Label x:Name="lbllastname" Content="Last Name" HorizontalAlignment="Left" Margin="476,138,0,0" VerticalAlignment="Top" Width="108" FontSize="20" RenderTransformOrigin="0.531,0.582"/>
+            <TextBox x:Name="txtfirstname" HorizontalAlignment="Left" Margin="476,99,0,0" Width="574" Height="25" CharacterCasing="Lower" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <TextBox x:Name="txtlastname" HorizontalAlignment="Left" Margin="476,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <Button x:Name="btnback2" Content="Back" HorizontalAlignment="Left" Margin="476,762,0,0" VerticalAlignment="Top" Width="74" Height="27" FontSize="16"/>
+            <Label x:Name="lblgender" Content="Gender" HorizontalAlignment="Left" Margin="476,220,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Height="40"/>
+            <RadioButton x:Name="rbmale" Content="Male" HorizontalAlignment="Left" Margin="476,264,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2" Width="144" BorderBrush="Black"/>
+            <RadioButton x:Name="rbfemale" Content="Female" HorizontalAlignment="Right" Margin="0,265,251,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1" BorderBrush="Black"/>
+            <Label x:Name="lbldob" Content="Date of Birth" HorizontalAlignment="Left" Margin="476,305,0,0" VerticalAlignment="Top" Width="136" FontSize="20" Height="40" Grid.ColumnSpan="2"/>
+            <DatePicker x:Name="DOBirth" HorizontalAlignment="Left" Margin="64,310,0,0" VerticalAlignment="Top" Width="194" FontSize="20" Grid.Column="1"/>
+            <Label x:Name="lblpnumber" Content="Phone Number" HorizontalAlignment="Left" Margin="476,358,0,0" VerticalAlignment="Top" Width="144" FontSize="20" RenderTransformOrigin="0.531,0.582" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtpnumber" HorizontalAlignment="Left" Margin="476,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <Label x:Name="lblprofession" Content="Profession" HorizontalAlignment="Left" Margin="476,439,0,0" VerticalAlignment="Top" Width="144" FontSize="20" RenderTransformOrigin="0.531,0.582" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtprofession" Margin="476,478,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black" HorizontalAlignment="Left" Width="574"/>
+            <Label x:Name="lblemail" Content="E-mail" HorizontalAlignment="Left" Margin="476,518,0,0" VerticalAlignment="Top" Width="144" FontSize="20" RenderTransformOrigin="0.531,0.582" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="476,557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <Label x:Name="lblnic" Content="NIC" HorizontalAlignment="Left" Margin="476,599,0,0" VerticalAlignment="Top" Width="144" FontSize="20" RenderTransformOrigin="0.531,0.582" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtnic" HorizontalAlignment="Left" Margin="476,638,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <Label x:Name="lbladdress" Content="Address" HorizontalAlignment="Left" Margin="476,681,0,0" VerticalAlignment="Top" Width="144" FontSize="20" RenderTransformOrigin="0.531,0.582" Grid.ColumnSpan="2"/>
+            <TextBox x:Name="txtaddress" HorizontalAlignment="Left" Margin="476,720,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
+            <Button x:Name="btnnxt" Content="Next" HorizontalAlignment="Left" Margin="384,762,0,0" VerticalAlignment="Top" Width="74" Height="27" FontSize="16" Grid.Column="1" Click="btnnxt_Click"/>
+        </Grid>
+
+    </Grid>
+</Window>
