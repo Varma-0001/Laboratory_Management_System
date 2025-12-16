@@ -18,7 +18,7 @@
             <Label x:Name="lbllastname" Content="Last Name" HorizontalAlignment="Left" Margin="476,138,0,0" VerticalAlignment="Top" Width="108" FontSize="20" RenderTransformOrigin="0.531,0.582"/>
             <TextBox x:Name="txtfirstname" HorizontalAlignment="Left" Margin="476,99,0,0" Width="574" Height="25" CharacterCasing="Lower" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Grid.ColumnSpan="2" BorderBrush="Black"/>
             <TextBox x:Name="txtlastname" HorizontalAlignment="Left" Margin="476,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="574" Height="29" CharacterCasing="Lower" VerticalContentAlignment="Center" Grid.ColumnSpan="2" BorderBrush="Black"/>
-            <Button x:Name="btnback2" Content="Back" HorizontalAlignment="Left" Margin="476,762,0,0" VerticalAlignment="Top" Width="74" Height="27" FontSize="16"/>
+            <Button x:Name="btnback2" Content="Back" HorizontalAlignment="Left" Margin="476,762,0,0" VerticalAlignment="Top" Width="74" Height="27" FontSize="16" Click="btnback2_Click"/>
             <Label x:Name="lblgender" Content="Gender" HorizontalAlignment="Left" Margin="476,220,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Height="40"/>
             <RadioButton x:Name="rbmale" Content="Male" HorizontalAlignment="Left" Margin="476,264,0,0" VerticalAlignment="Top" FontSize="20" Grid.ColumnSpan="2" Width="144" BorderBrush="Black"/>
             <RadioButton x:Name="rbfemale" Content="Female" HorizontalAlignment="Right" Margin="0,265,251,0" VerticalAlignment="Top" FontSize="20" Grid.Column="1" BorderBrush="Black"/>

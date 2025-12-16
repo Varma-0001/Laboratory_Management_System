@@ -34,7 +34,7 @@
             <Label x:Name="lblpassword" Content="Password" HorizontalAlignment="Left" Margin="500,401,0,0" VerticalAlignment="Top" Width="108" FontSize="20" Grid.ColumnSpan="2"/>
             <TextBox x:Name="txtusername" HorizontalAlignment="Left" Margin="37,357,0,0" Width="414" Height="25" CharacterCasing="Lower" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Grid.Column="1" BorderBrush="Black"/>
             <Button x:Name="btnpassword" Content="Forgot password" HorizontalAlignment="Left" Margin="500,518,0,0" VerticalAlignment="Top" Width="167" Height="33" FontSize="20" Grid.ColumnSpan="2"/>
-            <Button x:Name="btnsingin" Content="Singin" HorizontalAlignment="Right" Margin="0,518,34,0" VerticalAlignment="Top" Width="153" Height="33" FontSize="20" Grid.Column="1"/>
+            <Button x:Name="btnsingin" Content="Singin" HorizontalAlignment="Right" Margin="0,518,34,0" VerticalAlignment="Top" Width="153" Height="33" FontSize="20" Grid.Column="1" Click="btnsingin_Click"/>
             <Label x:Name="lblpass" Content="Don't have an account ?" HorizontalAlignment="Left" Margin="474,761,0,0" VerticalAlignment="Top" Width="189" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2"/>
             <Button x:Name="btncreate" Content="Create" HorizontalAlignment="Left" Margin="84,763,0,0" VerticalAlignment="Top" Width="74" Height="27" FontSize="16" Grid.Column="1" Click="btncreate_Click"/>
             <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="37,407,0,0" Width="414" Height="25" CharacterCasing="Lower" TextWrapping="Wrap" VerticalContentAlignment="Center" VerticalAlignment="Top" Grid.Column="1" BorderBrush="Black"/>

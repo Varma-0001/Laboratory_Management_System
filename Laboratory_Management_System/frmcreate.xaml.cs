@@ -114,5 +114,13 @@ namespace Laboratory_Management_System
                 rbfemale.IsChecked = false;
             }
         }
+
+        private void btnback2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+            MainWindow main = new MainWindow();
+            main.Show();
+        }
     }
 }
